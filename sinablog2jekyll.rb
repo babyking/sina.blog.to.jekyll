@@ -51,9 +51,9 @@ blog_urls.each do |url|
   nbsp = Nokogiri::HTML("&nbsp;").text
   blog_content = doc.css('.articalContent')[0].content.lstrip.gsub(/^#{nbsp}/,"")
 
-  #blog_content = blog_content.gsub(/^\012/, "````")
-  #blog_content = blog_content.gsub(/\012/, "  \012")
-  #blog_content = blog_content.gsub(/````/, "\012")
+  blog_content = blog_content.gsub(/^\012/, "````")
+  blog_content = blog_content.gsub(/\012/, "  \012")
+  blog_content = blog_content.gsub(/````/, "\012")
 
   filename = File.join(config[:posts], "#{blog_time}-#{blog_title.to_url}.#{config[:post_ext]}")
 
