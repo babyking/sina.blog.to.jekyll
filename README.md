@@ -8,7 +8,7 @@ sina.blog.to.jekyll
 
 ```ruby
 config = {
-    :username => 'xuxiaoming8',   # 用户名
+    :username => 'xujinglei',   # 用户名
     :posts => './_posts',         # 生成markdown文件路径
     :post_ext => 'md',
     :post_layout => 'post'        # 文件模板
